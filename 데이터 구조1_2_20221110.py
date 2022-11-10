@@ -22,7 +22,7 @@ for order in orders:
     products_list = order['products']
 
     user = users[user_id_list]
-    delivery[user[1]] = {}
+    # delivery[user[1]] = {}
     # user[0]
     # print(user[1])
 
@@ -30,6 +30,12 @@ for order in orders:
         product = products[products_id]
         if product['count'] > 0:
             p_name = product['name']
+
+            if
+                delivery[user[1]] = [(user[0],p_name)]:
+
+                else
+                delivery[user[1]].append()
             # print(p_name)
             # print(user[0], p_name)
         # print(product)
