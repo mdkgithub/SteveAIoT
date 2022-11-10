@@ -34,6 +34,7 @@ users = {123:['최원칠','관악구'],
          124:['이서혁','구로구'],
          125:['새싹','용산구']}
 
+<<<<<<< HEAD
 # for user in users:
 #     user_num = users.keys()
 
@@ -41,6 +42,12 @@ users = {123:['최원칠','관악구'],
 #
 # for n_id, ps in users:
 #      print(n_id)
+=======
+print(users)
+
+for n_id, ps in users:
+     print(n_id)
+>>>>>>> origin/master
 
 # print(search_users)
 # for name in sorted(users.keys()):
@@ -61,6 +68,7 @@ orders = [{'user_id':123, 'products':['a','c']},
          {'user_id':125, 'products':['e']},
          {'user_id':124, 'products':['b','d','e']}]
 
+<<<<<<< HEAD
 
 delivery = []
 
@@ -118,6 +126,11 @@ print(delivery)
 # {'name': '이서혁', 'product': '셔츠', 'locate': '구로구'},
 #
 # # {'name': '이서혁', 'product': '초코렛', 'locate': '구로구'} ]
+=======
+# for order_dic in orders:
+#     order_dic_value = order_dic.values()
+#     print(order_dic_value)
+>>>>>>> origin/master
 
 # for id, ps in orders:
 #     print(id)
