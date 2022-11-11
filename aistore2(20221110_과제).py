@@ -7,20 +7,38 @@ class AiStore:
         self.products = {'커피':10}
         self.prices = {'커피':1000}
 
-    def set_product(self, product_count, product_price):
-        self.product_name = {}
-        self.product_count = product_count
-        info = input('상품개수: ')
-        self.product_price = product_price * info
 
-        if product_count > 1:
+    def set_product(self, product_count, product_price):
+        # self.product_name = {}
+        # self.product_count = product_count
+        info = input('상품개수: ')
+        total_product_price = product_price * info
+
+        if product_count > 0:
             product_count += product_count
             up_product_price = product_price
-        else
+
+        else product_count < 0:
+            self.products = {'커피': 10}
+            self.prices = {'커피': 1000}
 
 
     def buy_product(self, product, count, amount):
-        ~
+        self.products -= self.products
+        self.amount = self.products * count
+
+        if self.count < count :
+            print('재고가 부족합니다')
+            return
+        total_price = count * self.amount
+
+        if amount < total_price :
+            print('금액이 부족합니다')
+            return
+
+        self.count -= count
+        changes = amount - total_price
+        print('잔돈은 %i입니다' % changes)
 
 
     def get_name(self):
