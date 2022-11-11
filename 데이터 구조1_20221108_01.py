@@ -49,16 +49,20 @@ delivery = []
 for order in orders:
     user_id_list = order['user_id']
     products_list = order['products']
+    # print(products_list)
 
     user = users[user_id_list]
+    # print(user)
 
     for products_id in products_list:
         product = products[products_id]
 
         dict = {}
-        dict["name"] = user[0]
-        dict["product"] = product
-        dict["locate"] = user[1]
+        # dict["name"] = user[0]
+        # dict["product"] = product
+        # dict["locate"] = user[1]
+
+        dict["name"] = user[0], product, user[1]
 
         # delivery = []
         # print(user[0], product, user[1])
@@ -66,9 +70,6 @@ for order in orders:
         delivery.append(dict)
 
 print(delivery)
-
-
-
 
 
 
