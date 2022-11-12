@@ -8,14 +8,12 @@ class AiStore:
         self.prices = {'커피':1000}
 
 
-    def set_product(self, product_count, product_price):
-        # self.product_name = {}
-        # self.product_count = product_count
+    def set_product(self, product_count, product_price, total_product_price):
         info = input('상품개수: ')
         total_product_price = product_price * info
 
         if product_count > 0:
-            product_count += product_count
+                product_count += product_count
             up_product_price = product_price
 
         else product_count < 0:
