@@ -70,7 +70,8 @@ if __name__ == '__main__':
         elif num == '3':
             count = input('상품 재고 입력')
             price = input('상품 가격 입력')
-            store.set_product(count, price)
+
+            store.set_product(int(count), int(price))
 
         elif num == '4':
             print('종료합니다')
