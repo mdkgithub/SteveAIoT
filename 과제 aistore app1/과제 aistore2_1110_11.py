@@ -9,12 +9,13 @@ print(sample_products.values().)
 
 class AiStore:
 
-    def __init__(self, name, s_id, locate):
+    def __init__(self, name, s_id, locate, p_id):
         self.name = name
         self.s_id = s_id
         self.locate = locate
         self.products = {'커피':10}
         self.prices = {'커피':1000}
+        self.p_id = p_id
 
 
     def set_product(self, product, count, price):
@@ -26,22 +27,38 @@ class AiStore:
             self.prices[product] = price
             return
 
-    def buy_product(self, product, count, amount):
+
+    # def get_p_id(self):
+    #     product = self.products[self.products['p_id'] == p_id]
+    #     # 질문8: 14번째 줄에서 사용한 함수이다. 동일하게 다시 사용한 이유는 ?
+    #     # if len(product) == 0:
+    #     return self.p_id
+
+
+    def buy_product(self, p_id, product, count, amount):
         # 제품 수량이 재고 수량보다 작은면
         # 구매한 제품 가격이 지불한 금액보다 작으면
         # 재고에서 구매한 제품 수량만큼 차감하고
         # 잔돈은 지불한 금액에서 구매한 제품 가격을 뺀다
 
-        if self.products[product] is None:
-            print('없는 상품입니다.')
+        # p_id를 사용해서 다시 변경해볼것
 
         if count < self.products[product]:
+
+            # p_id 설정으로 물품명 있는지 확인
+            product = self.products[self.products['p_id'] == p_id]
+            if len(product) == 0:
+                print('상품이 존재하지 않습니다.')
+                return
+
             if count * self.prices[product] < amount:
                 self.products[product] -= count
                 changes = amount - count * self.prices[product]
                 print('잔돈은 ' + str(changes))
-            else:
+
+            else :
                 print('금액이 부족합니다.')
+
         else:
             print('재고가 부족합니다.')
 
@@ -66,8 +83,10 @@ def create_store():
     s_id = input('스토어 아이디 입력: ')
     locate = input('스토어 위치 입력: ')
 
+    p_id = input('상품명 입력: ')
+
     # 클래스에 있는 생성자를 사용하여 새로운 변수에 할당
-    store = AiStore(s_name, s_id, locate)
+    store = AiStore(s_name, s_id, locate, p_id)
 
     print('{} 스토어가 생성 되었습니다.'.format(store.get_name()))
     return store
@@ -105,6 +124,7 @@ def buy():
         return
 
     product = input('상품 입력:')
+    # product = input('상품 입력:')
     count = input('구매 개수 입력: ')
     count = int(count)
     # 옵션
@@ -114,6 +134,7 @@ def buy():
 
     price = input('가격 입력: ')
     price = int(price)
+
     store.buy_product(product, count, price)
 
 
@@ -127,7 +148,7 @@ def manager_product():
     count = input('재고 개수 입력: ')
     price = input('상품 가격 입력: ')
 
-    store.set_product(s_id, product, count, price)
+    store.set_product(product, count, price)
 
 
 
