@@ -35,7 +35,7 @@ class AiStore:
     #     return self.p_id
 
 
-    def buy_product(self, p_id, product, count, amount):
+    def buy_product(self, p_id, count, amount):
         # 제품 수량이 재고 수량보다 작은면
         # 구매한 제품 가격이 지불한 금액보다 작으면
         # 재고에서 구매한 제품 수량만큼 차감하고
@@ -43,7 +43,7 @@ class AiStore:
 
         # p_id를 사용해서 다시 변경해볼것
 
-        if count < self.products[product]:
+        if count < self.products[p_id]:
 
             # p_id 설정으로 물품명 있는지 확인
             product = self.products[self.products['p_id'] == p_id]
@@ -86,7 +86,7 @@ def create_store():
     p_id = input('상품명 입력: ')
 
     # 클래스에 있는 생성자를 사용하여 새로운 변수에 할당
-    store = AiStore(s_name, s_id, locate, p_id)
+    store = AiStore(s_name, s_id, locate)
 
     print('{} 스토어가 생성 되었습니다.'.format(store.get_name()))
     return store
