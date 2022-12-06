@@ -1,0 +1,672 @@
+Building dependency tree... Done
+Reading state information... Done
+Note, selecting 'python-is-python2' instead of 'python'
+The following package was automatically installed and is no longer required:
+  libfuse2
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib python2
+  python2-minimal python2.7 python2.7-minimal swig4.0
+Suggested packages:
+  python2-doc python-tk python2.7-doc binfmt-support swig-doc swig-examples
+  swig4.0-examples swig4.0-doc
+The following packages will be REMOVED:
+  python-is-python3
+The following NEW packages will be installed:
+  libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib python-is-python2
+  python2 python2-minimal python2.7 python2.7-minimal swig swig4.0
+0 upgraded, 10 newly installed, 1 to remove and 99 not upgraded.
+Need to get 5,219 kB of archives.
+After this operation, 20.7 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf libpython2.7-minimal armhf 2.7.18-8 [396 kB]
+Get:2 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf python2.7-minimal armhf 2.7.18-8 [1,076 kB]
+Get:3 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf python2-minimal armhf 2.7.18-3 [34.2 kB]
+Get:4 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf libpython2.7-stdlib armhf 2.7.18-8 [1,802 kB]
+Get:5 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf python2.7 armhf 2.7.18-8 [311 kB]
+Get:6 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf libpython2-stdlib armhf 2.7.18-3 [21.2 kB]
+Get:7 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf python2 armhf 2.7.18-3 [24.5 kB]
+Get:8 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf python-is-python2 all 2.7.18-9 [2,940 B]
+Get:9 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf swig4.0 armhf 4.0.2-1 [1,221 kB]
+Get:10 http://ftp.kaist.ac.kr/raspbian/raspbian bullseye/main armhf swig all 4.0.2-1 [330 kB]
+Fetched 5,219 kB in 8s (625 kB/s)                                              
+(Reading database ... 109014 files and directories currently installed.)
+Removing python-is-python3 (3.9.2-1) ...
+Selecting previously unselected package libpython2.7-minimal:armhf.
+(Reading database ... 109009 files and directories currently installed.)
+Preparing to unpack .../0-libpython2.7-minimal_2.7.18-8_armhf.deb ...
+Unpacking libpython2.7-minimal:armhf (2.7.18-8) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../1-python2.7-minimal_2.7.18-8_armhf.deb ...
+Unpacking python2.7-minimal (2.7.18-8) ...
+Selecting previously unselected package python2-minimal.
+Preparing to unpack .../2-python2-minimal_2.7.18-3_armhf.deb ...
+Unpacking python2-minimal (2.7.18-3) ...
+Selecting previously unselected package libpython2.7-stdlib:armhf.
+Preparing to unpack .../3-libpython2.7-stdlib_2.7.18-8_armhf.deb ...
+Unpacking libpython2.7-stdlib:armhf (2.7.18-8) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../4-python2.7_2.7.18-8_armhf.deb ...
+Unpacking python2.7 (2.7.18-8) ...
+Selecting previously unselected package libpython2-stdlib:armhf.
+Preparing to unpack .../5-libpython2-stdlib_2.7.18-3_armhf.deb ...
+Unpacking libpython2-stdlib:armhf (2.7.18-3) ...
+Setting up libpython2.7-minimal:armhf (2.7.18-8) ...
+Setting up python2.7-minimal (2.7.18-8) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python2-minimal (2.7.18-3) ...
+Selecting previously unselected package python2.
+(Reading database ... 109755 files and directories currently installed.)
+Preparing to unpack .../python2_2.7.18-3_armhf.deb ...
+Unpacking python2 (2.7.18-3) ...
+Selecting previously unselected package python-is-python2.
+Preparing to unpack .../python-is-python2_2.7.18-9_all.deb ...
+Unpacking python-is-python2 (2.7.18-9) ...
+Selecting previously unselected package swig4.0.
+Preparing to unpack .../swig4.0_4.0.2-1_armhf.deb ...
+Unpacking swig4.0 (4.0.2-1) ...
+Selecting previously unselected package swig.
+Preparing to unpack .../archives/swig_4.0.2-1_all.deb ...
+Unpacking swig (4.0.2-1) ...
+Setting up libpython2.7-stdlib:armhf (2.7.18-8) ...
+Setting up swig4.0 (4.0.2-1) ...
+Setting up swig (4.0.2-1) ...
+Setting up python2.7 (2.7.18-8) ...
+Setting up libpython2-stdlib:armhf (2.7.18-3) ...
+Setting up python2 (2.7.18-3) ...
+Setting up python-is-python2 (2.7.18-9) ...
+Processing triggers for gnome-menus (3.36.0-1) ...
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for mailcap (3.69) ...
+Processing triggers for desktop-file-utils (0.26-1) ...
+steve@s16:~ $ git clone http://github.com/YDLIDAR/YDLidar-SDK.git
+Cloning into 'YDLidar-SDK'...
+warning: redirecting to https://github.com/YDLIDAR/YDLidar-SDK.git/
+remote: Enumerating objects: 789, done.
+remote: Counting objects: 100% (37/37), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 789 (delta 27), reused 24 (delta 24), pack-reused 752
+Receiving objects: 100% (789/789), 11.24 MiB | 1.25 MiB/s, done.
+Resolving deltas: 100% (482/482), done.
+steve@s16:~ $ cd YDLidar-SDK/build
+bash: cd: YDLidar-SDK/build: No such file or directory
+steve@s16:~ $ ls
+ 2022-09-22-025045_1024x768_scrot.png
+ 2022-09-22-025049_1024x768_scrot.png
+ 2022-11-29-091430_1024x768_scrot.png
+ 2022-11-29-091452_1024x768_scrot.png
+ 2022-11-29-091503_1024x768_scrot.png
+ 2022-11-29-091504_1024x768_scrot.png
+ 2022-11-29-091505_1024x768_scrot_000.png
+ 2022-11-29-091505_1024x768_scrot_001.png
+ 2022-11-29-091505_1024x768_scrot.png
+ 2022-11-29-091529_1024x768_scrot.png
+ 2022-11-29-091607_1024x768_scrot.png
+ 2022-11-29-091615_1024x768_scrot.png
+ 2022-11-29-091617_1024x768_scrot_000.png
+ 2022-11-29-091617_1024x768_scrot.png
+ 2022-12-01-051753_3840x2160_scrot.png
+ 2022-12-01-052129_3840x2160_scrot.png
+ 2022-12-01-052130_3840x2160_scrot.png
+ 2022-12-01-052132_3840x2160_scrot.png
+ 2022-12-01-052133_3840x2160_scrot.png
+ Bookshelf
+ Desktop
+ Documents
+ Downloads
+'GPIO Control'
+'I2C Multi Control'
+ Music
+ Pictures
+ Public
+ pynetwork
+'Stepper motor'
+ TempHumiSensControl
+ Templates
+ Videos
+ YDLidar-SDK
+steve@s16:~ $ cd YDLidar-SDK/
+steve@s16:~/YDLidar-SDK $ ls
+cmake           csharp    LICENSE.txt  README.pdf  src      ydlidar_config.h.in
+CMakeLists.txt  doc       python       samples     startup
+core            Doxyfile  README.md    setup.py    test
+steve@s16:~/YDLidar-SDK $ mkdir build
+steve@s16:~/YDLidar-SDK $ ls
+build           core    Doxyfile     README.md   setup.py  test
+cmake           csharp  LICENSE.txt  README.pdf  src       ydlidar_config.h.in
+CMakeLists.txt  doc     python       samples     startup
+steve@s16:~/YDLidar-SDK $ cd build/
+steve@s16:~/YDLidar-SDK/build $ ls
+steve@s16:~/YDLidar-SDK/build $ make
+make: *** No targets specified and no makefile found.  Stop.
+steve@s16:~/YDLidar-SDK/build $ sudo make install
+make: *** No rule to make target 'install'.  Stop.
+steve@s16:~/YDLidar-SDK/build $ cmake
+Usage
+
+  cmake [options] <path-to-source>
+  cmake [options] <path-to-existing-build>
+  cmake [options] -S <path-to-source> -B <path-to-build>
+
+Specify a source directory to (re-)generate a build system for it in the
+current working directory.  Specify an existing build directory to
+re-generate its build system.
+
+Run 'cmake --help' for more information.
+
+steve@s16:~/YDLidar-SDK/build $ cmake ..
+-- The C compiler identification is GNU 10.2.1
+-- The CXX compiler identification is GNU 10.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Current platform: Linux
+CMake Deprecation Warning at CMakeLists.txt:50 (cmake_policy):
+  The OLD behavior for policy CMP0053 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+CMake Deprecation Warning at CMakeLists.txt:53 (cmake_policy):
+  The OLD behavior for policy CMP0037 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+CMake Deprecation Warning at CMakeLists.txt:56 (cmake_policy):
+  The OLD behavior for policy CMP0043 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Found SWIG: /usr/bin/swig4.0 (found version "4.0.2")  
+-- Found PythonInterp: /usr/bin/python (found version "2.7.18") 
+-- Found PythonLibs: /usr/lib/arm-linux-gnueabihf/libpython3.9.so (found version "3.9.2") 
+-- Could NOT find GTest (missing: GTEST_LIBRARY GTEST_INCLUDE_DIR GTEST_MAIN_LIBRARY) 
+-- build python API....
+CMake Warning (dev) at /usr/share/cmake-3.18/Modules/UseSWIG.cmake:634 (message):
+  Policy CMP0078 is not set: UseSWIG generates standard target names.  Run
+  "cmake --help-policy CMP0078" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  python/CMakeLists.txt:35 (swig_add_library)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake-3.18/Modules/UseSWIG.cmake:486 (message):
+  Policy CMP0086 is not set: UseSWIG honors SWIG_MODULE_NAME via -module
+  flag.  Run "cmake --help-policy CMP0086" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /usr/share/cmake-3.18/Modules/UseSWIG.cmake:736 (SWIG_ADD_SOURCE_TO_MODULE)
+  python/CMakeLists.txt:35 (swig_add_library)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Deprecation Warning at cmake/install_package.cmake:101 (cmake_policy):
+  The OLD behavior for policy CMP0026 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  CMakeLists.txt:168 (install_package)
+
+
+CMake Warning (dev) at cmake/install_package.cmake:191 (install):
+  Policy CMP0062 is not set: Disallow install() of export() result.  Run
+  "cmake --help-policy CMP0062" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The file
+
+    /home/steve/YDLidar-SDK/build/ydlidar_sdkTargets.cmake
+
+  was generated by the export() command.  It should not be installed with the
+  install() command.  Use the install(EXPORT) mechanism instead.  See the
+  cmake-packages(7) manual for more.
+
+Call Stack (most recent call first):
+  CMakeLists.txt:168 (install_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- 
+-- +===========================================================================+
+-- |         Resulting configuration for                             |
+-- +===========================================================================+
+--  _________________________ PLATFORM _____________________________
+--  Host                        : Linux5.15.61-v7l+armv7l
+--  Is the system big endian?   :  No 
+--  Word size (32/64 bit)       : 32
+--  CMake version               : 3.18.4
+--  CMake generator             : Unix Makefiles
+--  CMake build tool            : /usr/bin/gmake
+--  Compiler                    : GNU
+--  Configuration               : 
+-- 
+--  __________________________ OPTIONS _____________________________
+--  Build YDLidar-SDK as a shared library?　　 :  No 
+--  Build Examples?　　　　　　　　　　　　　　 : Yes 
+--  Build C Sharp API?　　　　　　　　　　　　 :  No 
+--  Build TEST?  			　　　 : Yes 
+-- 
+--  _________________________ INSTALL _____________________
+--  Install prefix                    : /usr/local
+-- 
+--  _______________________ WRAPPERS/BINDINGS ______________________
+--  Python bindings (pyydlidar)   : Yes 
+--   - dep: Swig found?       : Yes [Version: 4.0.2]
+--   - dep: PythonLibs found?  : Yes [Version: 2.7.18]
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/steve/YDLidar-SDK/build
+steve@s16:~/YDLidar-SDK/build $ make
+Scanning dependencies of target ydlidar_sdk
+[  3%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/base/timer.cpp.o
+[  6%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/common/ydlidar_def.cpp.o
+[  9%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/network/ActiveSocket.cpp.o
+[ 12%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/network/PassiveSocket.cpp.o
+[ 15%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/network/SimpleSocket.cpp.o
+[ 18%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/serial.cpp.o
+[ 21%] Building C object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/lock.c.o
+[ 25%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/list_ports_linux.cpp.o
+[ 28%] Building CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/unix_serial.cpp.o
+[ 31%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/CYdLidar.cpp.o
+[ 34%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/ETLidarDriver.cpp.o
+[ 37%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/GS1LidarDriver.cpp.o
+/home/steve/YDLidar-SDK/src/GS1LidarDriver.cpp: In member function ‘result_t ydlidar::GS1LidarDriver::waitPackage(node_info*, uint32_t)’:
+/home/steve/YDLidar-SDK/src/GS1LidarDriver.cpp:981:87: warning: taking address of packed member of ‘node_info’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  981 | rm((*node).distance_q2, package_Sample_Index, &sampleAngle, &(*node).distance_q2);
+      |                                                             ^~~~~~~~~~~~~~~~~~~~
+
+[ 40%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/GS2LidarDriver.cpp.o
+/home/steve/YDLidar-SDK/src/GS2LidarDriver.cpp: In member function ‘result_t ydlidar::GS2LidarDriver::waitPackage(node_info*, uint32_t)’:
+/home/steve/YDLidar-SDK/src/GS2LidarDriver.cpp:899:83: warning: taking address of packed member of ‘node_info’ may result in an unaligned pointer value [-Waddress-of-packed-member]
+  899 | rm((*node).distance_q2, package_Sample_Index, &sampleAngle, &(*node).distance_q2);
+      |                                                             ^~~~~~~~~~~~~~~~~~~~
+
+[ 43%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/YDlidarDriver.cpp.o
+[ 46%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/ydlidar_sdk.cpp.o
+[ 50%] Building CXX object CMakeFiles/ydlidar_sdk.dir/src/filters/NoiseFilter.cpp.o
+[ 53%] Linking CXX static library libydlidar_sdk.a
+[ 53%] Built target ydlidar_sdk
+Scanning dependencies of target et_test
+[ 56%] Building CXX object samples/CMakeFiles/et_test.dir/et_test.cpp.o
+[ 59%] Linking CXX executable ../et_test
+[ 59%] Built target et_test
+Scanning dependencies of target tmini_test
+[ 62%] Building CXX object samples/CMakeFiles/tmini_test.dir/tmini_test.cpp.o
+[ 65%] Linking CXX executable ../tmini_test
+[ 65%] Built target tmini_test
+Scanning dependencies of target tof_test
+[ 68%] Building CXX object samples/CMakeFiles/tof_test.dir/tof_test.cpp.o
+[ 71%] Linking CXX executable ../tof_test
+[ 71%] Built target tof_test
+Scanning dependencies of target gs_test
+[ 75%] Building CXX object samples/CMakeFiles/gs_test.dir/gs_test.cpp.o
+[ 78%] Linking CXX executable ../gs_test
+[ 78%] Built target gs_test
+Scanning dependencies of target tri_test
+[ 81%] Building CXX object samples/CMakeFiles/tri_test.dir/tri_test.cpp.o
+[ 84%] Linking CXX executable ../tri_test
+[ 84%] Built target tri_test
+Scanning dependencies of target lidar_c_api_test
+[ 87%] Building C object samples/CMakeFiles/lidar_c_api_test.dir/lidar_c_api_test.c.o
+cc1: warning: command-line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+[ 90%] Linking CXX executable ../lidar_c_api_test
+[ 90%] Built target lidar_c_api_test
+Scanning dependencies of target ydlidar_swig_compilation
+[ 93%] Swig compile ydlidar_sdk.i for python
+[ 93%] Built target ydlidar_swig_compilation
+Scanning dependencies of target _ydlidar
+[ 96%] Building CXX object python/CMakeFiles/_ydlidar.dir/CMakeFiles/_ydlidar.dir/ydlidar_sdkPYTHON_wrap.cxx.o
+[100%] Linking CXX shared module _ydlidar.so
+[100%] Built target _ydlidar
+steve@s16:~/YDLidar-SDK/build $ sudo make install
+[ 53%] Built target ydlidar_sdk
+[ 59%] Built target et_test
+[ 65%] Built target tmini_test
+[ 71%] Built target tof_test
+[ 78%] Built target gs_test
+[ 84%] Built target tri_test
+[ 90%] Built target lidar_c_api_test
+[ 93%] Built target ydlidar_swig_compilation
+[100%] Built target _ydlidar
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/include/core/base/datatype.h
+-- Installing: /usr/local/include/core/base/locker.h
+-- Installing: /usr/local/include/core/base/thread.h
+-- Installing: /usr/local/include/core/base/timer.h
+-- Installing: /usr/local/include/core/base/typedef.h
+-- Installing: /usr/local/include/core/base/utils.h
+-- Installing: /usr/local/include/core/base/v8stdint.h
+-- Installing: /usr/local/include/core/base/ydlidar.h
+-- Installing: /usr/local/include/core/common/ChannelDevice.h
+-- Installing: /usr/local/include/core/common/DriverInterface.h
+-- Installing: /usr/local/include/core/common/ydlidar_datatype.h
+-- Installing: /usr/local/include/core/common/ydlidar_def.h
+-- Installing: /usr/local/include/core/common/ydlidar_help.h
+-- Installing: /usr/local/include/core/common/ydlidar_protocol.h
+-- Installing: /usr/local/include/core/math/angles.h
+-- Installing: /usr/local/include/core/network/ActiveSocket.h
+-- Installing: /usr/local/include/core/network/PassiveSocket.h
+-- Installing: /usr/local/include/core/network/SimpleSocket.h
+-- Installing: /usr/local/include/core/network/StatTimer.h
+-- Installing: /usr/local/include/core/serial/common.h
+-- Installing: /usr/local/include/core/serial/serial.h
+-- Installing: /usr/local/include/core/serial/impl/unix/lock.h
+-- Installing: /usr/local/include/core/serial/impl/unix/unix.h
+-- Installing: /usr/local/include/core/serial/impl/unix/unix_serial.h
+-- Installing: /usr/local/include/src/CYdLidar.h
+-- Installing: /usr/local/include/src/ETLidarDriver.h
+-- Installing: /usr/local/include/src/GS1LidarDriver.h
+-- Installing: /usr/local/include/src/GS2LidarDriver.h
+-- Installing: /usr/local/include/src/YDlidarDriver.h
+-- Installing: /usr/local/include/src/ydlidar_sdk.h
+-- Installing: /usr/local/include/src/filters/FilterInterface.h
+-- Installing: /usr/local/include/src/filters/NoiseFilter.h
+-- Installing: /usr/local/include/ydlidar_config.h
+-- Installing: /usr/local/lib/libydlidar_sdk.a
+-- Installing: /usr/local/lib/pkgconfig/YDLIDAR_SDK.pc
+-- Installing: /usr/local/lib/cmake/ydlidar_sdk/ydlidar_sdkConfig.cmake
+-- Installing: /usr/local/lib/cmake/ydlidar_sdk/ydlidar_sdkTargets.cmake
+-- Installing: /usr/local/lib/cmake/ydlidar_sdk/ydlidar_sdkConfigVersion.cmake
+-- Installing: /usr/local/share/YDLIDAR_SDK/FindYDLIDAR_SDK.cmake
+-- Up-to-date: /usr/local/share/YDLIDAR_SDK
+-- Installing: /usr/local/share/YDLIDAR_SDK/common
+-- Installing: /usr/local/share/YDLIDAR_SDK/common/ydlidar_parse.cmake
+-- Installing: /usr/local/share/YDLIDAR_SDK/common/ydlidar_base.cmake
+-- Installing: /usr/local/share/YDLIDAR_SDK/script_show_final_summary.cmake
+-- Installing: /usr/local/share/YDLIDAR_SDK/install_package.cmake
+-- Installing: /usr/local/share/YDLIDAR_SDK/PkgConfig.pc.in
+-- Installing: /usr/local/share/YDLIDAR_SDK/FindPackage.cmake.in
+-- Installing: /usr/local/share/YDLIDAR_SDK/cmake_uninstall.cmake.in
+-- Installing: /usr/local/share/YDLIDAR_SDK/PackageConfig.cmake.in
+-- Installing: /usr/local/share/YDLIDAR_SDK/PackageConfigVersion.cmake.in
+-- Installing: /usr/local/share/YDLIDAR_SDK/LICENSE.txt
+-- Installing: /usr/local/share/YDLIDAR_SDK/README.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_solve_slow_pull_from_cn.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_build_and_debug_using_vscode.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_create_a_pull.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/README.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_gerenrate_vs_project_by_cmake.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_build_and_install.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/cpack.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/sdk_init.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/csharp_library.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/csharp_exception.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/ydlidar_lidar_monitor.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/sequence.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/vscode
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/vscode/run_tasks.jpg
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/vscode/tasks.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/csharp_project.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/ttyUSB0.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/csharp_build.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/sdk_scanning.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/csharp_running.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/images/ttyUSB1.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_create_a_csharp_project.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/howto/how_to_create_a_udev_rules.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/quickstart
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/quickstart/README.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/quickstart/ydlidar_sdk_software_installation_guide.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/General_FAQs_cn.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/README.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs_cn.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/General_FAQs.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs_cn.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.pdf
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/README.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials/examine_the_simple_lidar_tutorial.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_python.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c++.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_network_adapter_tutorial_c++.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/YDLidar_SDK_Communication_Protocol.pdf
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/Diagram.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/Dataset.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/sdk_init.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/frame.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/YDLidar.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/FlowChart.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/YDLidar.jpg
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/sequence.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/communication_mechanism.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/system_workflow.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/EAI.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/frame_intensity.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/sdk_scanning.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/sdk_architecture.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/images/angle_q2.png
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/SDK.pdf
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/Tutorials.md
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.html
+-- Installing: /usr/local/share/YDLIDAR_SDK/doc/YDLIDAR_SDK_API_for_Developers.md
+-- Installing: /usr/local/startup/initenv.sh
+-- Installing: /usr/local/bin/et_test
+-- Installing: /usr/local/bin/gs_test
+-- Installing: /usr/local/bin/tmini_test
+-- Installing: /usr/local/bin/tof_test
+-- Installing: /usr/local/bin/tri_test
+-- Installing: /usr/local/bin/lidar_c_api_test
+-- Installing: /usr/local/lib/python2.7/dist-packages/_ydlidar.so
+-- Installing: /usr/local/lib/python2.7/dist-packages/ydlidar.py
+-- Installing: /usr/local/bin/etlidar_test.py
+-- Installing: /usr/local/bin/plot_tof_test.py
+-- Installing: /usr/local/bin/plot_ydlidar_test.py
+-- Installing: /usr/local/bin/test.py
+-- Installing: /usr/local/bin/tof_test.py
+-- Installing: /usr/local/bin/ydlidar_test.py
+steve@s16:~/YDLidar-SDK/build $ cd YDLidar-SDK
+bash: cd: YDLidar-SDK: No such file or directory
+steve@s16:~/YDLidar-SDK/build $ ls
+CMakeCache.txt           et_test                src
+CMakeFiles               FindYDLIDAR_SDK.cmake  tmini_test
+cmake_install.cmake      gs_test                tof_test
+cmake_uninstall.cmake    install_manifest.txt   tri_test
+compile_commands.json    libydlidar_sdk.a       ydlidar_config.h
+core                     lidar_c_api_test       ydlidar_sdkConfig.cmake
+CPackConfig.cmake        Makefile               ydlidar_sdkConfigVersion.cmake
+CPackSourceConfig.cmake  python                 YDLIDAR_SDK.pc
+CTestTestfile.cmake      samples                ydlidar_sdkTargets.cmake
+steve@s16:~/YDLidar-SDK/build $ cd ..
+steve@s16:~/YDLidar-SDK $ cd YDLidar-SDK
+bash: cd: YDLidar-SDK: No such file or directory
+steve@s16:~/YDLidar-SDK $ pip install
+ERROR: You must give at least one requirement to install (see "pip help install")
+steve@s16:~/YDLidar-SDK $ pip install.
+ERROR: unknown command "install." - maybe you meant "install"
+steve@s16:~/YDLidar-SDK $ pip install .
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Processing /home/steve/YDLidar-SDK
+Building wheels for collected packages: ydlidar
+  Building wheel for ydlidar (setup.py) ... done
+  Created wheel for ydlidar: filename=ydlidar-1.0.2-cp39-cp39-linux_armv7l.whl size=204157 sha256=54990887ea596c62bdbbe6697c415c58c921e12daea70cdc8645d1fedfeb1805
+  Stored in directory: /home/steve/.cache/pip/wheels/53/71/dd/e2ba871124c978c4166c60473a3f73c165d3a4b8e7c896003c
+Successfully built ydlidar
+Installing collected packages: ydlidar
+Successfully installed ydlidar-1.0.2
+steve@s16:~/YDLidar-SDK $ pip install numpy
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: numpy in /usr/lib/python3/dist-packages (1.19.5)
+steve@s16:~/YDLidar-SDK $ pip3 install matplotlib
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting matplotlib
+  Downloading https://www.piwheels.org/simple/matplotlib/matplotlib-3.6.2-cp39-cp39-linux_armv7l.whl (10.7 MB)
+     |████████████████████████████████| 10.7 MB 353 bytes/s 
+Collecting contourpy>=1.0.1
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /simple/contourpy/contourpy-1.0.6-cp39-cp39-linux_armv7l.whl
+  Downloading https://www.piwheels.org/simple/contourpy/contourpy-1.0.6-cp39-cp39-linux_armv7l.whl (221 kB)
+     |████████████████████████████████| 221 kB 112 kB/s 
+Requirement already satisfied: pillow>=6.2.0 in /usr/lib/python3/dist-packages (from matplotlib) (8.1.2)
+Collecting fonttools>=4.22.0
+  Downloading https://www.piwheels.org/simple/fonttools/fonttools-4.38.0-cp39-cp39-linux_armv7l.whl (2.4 MB)
+     |████████████████████████████████| 2.4 MB 314 kB/s 
+Collecting kiwisolver>=1.0.1
+  Downloading https://www.piwheels.org/simple/kiwisolver/kiwisolver-1.4.4-cp39-cp39-linux_armv7l.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 499 kB/s 
+Collecting packaging>=20.0
+  Using cached https://www.piwheels.org/simple/packaging/packaging-21.3-py3-none-any.whl (40 kB)
+Collecting pyparsing>=2.2.1
+  Using cached https://www.piwheels.org/simple/pyparsing/pyparsing-3.0.9-py3-none-any.whl (98 kB)
+Collecting cycler>=0.10
+  Downloading https://www.piwheels.org/simple/cycler/cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Requirement already satisfied: numpy>=1.19 in /usr/lib/python3/dist-packages (from matplotlib) (1.19.5)
+Collecting python-dateutil>=2.7
+  Downloading https://www.piwheels.org/simple/python-dateutil/python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     |████████████████████████████████| 247 kB 278 kB/s 
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Installing collected packages: pyparsing, python-dateutil, packaging, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.0.6 cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.6.2 packaging-21.3 pyparsing-3.0.9 python-dateutil-2.8.2
+steve@s16:~/YDLidar-SDK $ sudo apt install python3-gi-cario
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package python3-gi-cario
+steve@s16:~/YDLidar-SDK $ pip3 install numpy==1.23.6
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+ERROR: Could not find a version that satisfies the requirement numpy==1.23.6
+ERROR: No matching distribution found for numpy==1.23.6
+steve@s16:~/YDLidar-SDK $ pip3 install numpy==1.23.5
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting numpy==1.23.5
+  Downloading https://www.piwheels.org/simple/numpy/numpy-1.23.5-cp39-cp39-linux_armv7l.whl (12.4 MB)
+     |████████████████████████████████| 12.4 MB 142 kB/s 
+Installing collected packages: numpy
+Successfully installed numpy-1.23.5
+steve@s16:~/YDLidar-SDK $ cd ..
+steve@s16:~ $ pip3 install upgrage numpy
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xb519f3a0>: Failed to establish a new connection: [Errno 101] Network is unreachable')': /simple/upgrage/
+ERROR: Could not find a version that satisfies the requirement upgrage
+ERROR: No matching distribution found for upgrage
+steve@s16:~ $ pip3 install --upgrage numpy
+
+Usage:   
+  pip3 install [options] <requirement specifier> [package-index-options] ...
+  pip3 install [options] -r <requirements file> [package-index-options] ...
+  pip3 install [options] [-e] <vcs project url> ...
+  pip3 install [options] [-e] <local project path> ...
+  pip3 install [options] <archive url/path> ...
+
+no such option: --upgrage
+steve@s16:~ $ pip3 install numpy --upgrade
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: numpy in ./.local/lib/python3.9/site-packages (1.23.5)
+Collecting numpy
+  Using cached https://www.piwheels.org/simple/numpy/numpy-1.23.5-cp39-cp39-linux_armv7l.whl (12.4 MB)
+  Downloading https://www.piwheels.org/simple/numpy/numpy-1.23.4-cp39-cp39-linux_armv7l.whl (12.4 MB)
+     |████████████████████████████████| 12.4 MB 109 kB/s 
+steve@s16:~ $ sudo apt-get install libatlas-base-dev
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfuse2
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  libatlas3-base
+Suggested packages:
+  libatlas-doc liblapack-doc
+The following NEW packages will be installed:
+  libatlas-base-dev libatlas3-base
+0 upgraded, 2 newly installed, 0 to remove and 99 not upgraded.
+Need to get 5,055 kB of archives.
+After this operation, 26.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf libatlas3-base armhf 3.10.3-10+rpi1 [2,454 kB]
+Get:2 http://raspbian.raspberrypi.org/raspbian bullseye/main armhf libatlas-base-dev armhf 3.10.3-10+rpi1 [2,601 kB]
+Fetched 5,055 kB in 5s (958 kB/s)              
+Selecting previously unselected package libatlas3-base:armhf.
+(Reading database ... 110532 files and directories currently installed.)
+Preparing to unpack .../libatlas3-base_3.10.3-10+rpi1_armhf.deb ...
+Unpacking libatlas3-base:armhf (3.10.3-10+rpi1) ...
+Selecting previously unselected package libatlas-base-dev:armhf.
+Preparing to unpack .../libatlas-base-dev_3.10.3-10+rpi1_armhf.deb ...
+Unpacking libatlas-base-dev:armhf (3.10.3-10+rpi1) ...
+Setting up libatlas3-base:armhf (3.10.3-10+rpi1) ...
+update-alternatives: using /usr/lib/arm-linux-gnueabihf/atlas/libblas.so.3 to provide /usr/lib/arm-linux-gnueabihf/libblas.so.3 (libblas.so.3-arm-linux-gnueabihf) in auto mode
+update-alternatives: using /usr/lib/arm-linux-gnueabihf/atlas/liblapack.so.3 to provide /usr/lib/arm-linux-gnueabihf/liblapack.so.3 (liblapack.so.3-arm-linux-gnueabihf) in auto mode
+Setting up libatlas-base-dev:armhf (3.10.3-10+rpi1) ...
+update-alternatives: using /usr/lib/arm-linux-gnueabihf/atlas/libblas.so to provide /usr/lib/arm-linux-gnueabihf/libblas.so (libblas.so-arm-linux-gnueabihf) in auto mode
+update-alternatives: using /usr/lib/arm-linux-gnueabihf/atlas/liblapack.so to provide /usr/lib/arm-linux-gnueabihf/liblapack.so (liblapack.so-arm-linux-gnueabihf) in auto mode
+Processing triggers for libc-bin (2.31-13+rpt2+rpi1+deb11u4) ...
+steve@s16:~ $ pip3 uninstall matplotlib
+Found existing installation: matplotlib 3.6.2
+Uninstalling matplotlib-3.6.2:
+  Would remove:
+    /home/steve/.local/lib/python3.9/site-packages/matplotlib-3.6.2-py3.9-nspkg.pth
+    /home/steve/.local/lib/python3.9/site-packages/matplotlib-3.6.2.dist-info/*
+    /home/steve/.local/lib/python3.9/site-packages/matplotlib/*
+    /home/steve/.local/lib/python3.9/site-packages/mpl_toolkits/axes_grid1/*
+    /home/steve/.local/lib/python3.9/site-packages/mpl_toolkits/axisartist/*
+    /home/steve/.local/lib/python3.9/site-packages/mpl_toolkits/mplot3d/*
+    /home/steve/.local/lib/python3.9/site-packages/mpl_toolkits/tests/*
+    /home/steve/.local/lib/python3.9/site-packages/pylab.py
+Proceed (y/n)? y
+  Successfully uninstalled matplotlib-3.6.2
+steve@s16:~ $ sudo pip3 install matplotlib-3.5.3
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+ERROR: Could not find a version that satisfies the requirement matplotlib-3.5.3
+ERROR: No matching distribution found for matplotlib-3.5.3
+steve@s16:~ $ sudo pip3 install matplotlib==3.5.3
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting matplotlib==3.5.3
+  Downloading https://www.piwheels.org/simple/matplotlib/matplotlib-3.5.3-cp39-cp39-linux_armv7l.whl (10.7 MB)
+     |████████████████████████████████| 10.7 MB 124 kB/s 
+Collecting cycler>=0.10
+  Downloading https://www.piwheels.org/simple/cycler/cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading https://www.piwheels.org/simple/kiwisolver/kiwisolver-1.4.4-cp39-cp39-linux_armv7l.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 4.1 MB/s 
+Collecting fonttools>=4.22.0
+  Downloading https://www.piwheels.org/simple/fonttools/fonttools-4.38.0-cp39-cp39-linux_armv7l.whl (2.4 MB)
+     |████████████████████████████████| 2.4 MB 1.7 MB/s 
+Requirement already satisfied: numpy>=1.17 in /usr/lib/python3/dist-packages (from matplotlib==3.5.3) (1.19.5)
+Collecting python-dateutil>=2.7
+  Downloading https://www.piwheels.org/simple/python-dateutil/python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+     |████████████████████████████████| 247 kB 1.6 MB/s 
+Collecting pyparsing>=2.2.1
+  Downloading https://www.piwheels.org/simple/pyparsing/pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     |████████████████████████████████| 98 kB 1.2 MB/s 
+Collecting packaging>=20.0
+  Downloading https://www.piwheels.org/simple/packaging/packaging-21.3-py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 1.0 MB/s 
+Requirement already satisfied: pillow>=6.2.0 in /usr/lib/python3/dist-packages (from matplotlib==3.5.3) (8.1.2)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib==3.5.3) (1.16.0)
+Installing collected packages: pyparsing, python-dateutil, packaging, kiwisolver, fonttools, cycler, matplotlib
+Successfully installed cycler-0.11.0 fonttools-4.38.0 kiwisolver-1.4.4 matplotlib-3.5.3 packaging-21.3 pyparsing-3.0.9 python-dateutil-2.8.2
+steve@s16:~ $ 
