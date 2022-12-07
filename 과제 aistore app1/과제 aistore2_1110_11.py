@@ -35,7 +35,7 @@ class AiStore:
     #     return self.p_id
 
 
-    def buy_product(self, p_id, count, amount):
+    def buy_product(self, product, count, amount):
         # 제품 수량이 재고 수량보다 작은면
         # 구매한 제품 가격이 지불한 금액보다 작으면
         # 재고에서 구매한 제품 수량만큼 차감하고
@@ -43,24 +43,27 @@ class AiStore:
 
         # p_id를 사용해서 다시 변경해볼것
 
-        if count < self.products[p_id]:
+        if product in self.products:
+        #if self.products['product'] == product:
 
-            # p_id 설정으로 물품명 있는지 확인
-            product = self.products[self.products['p_id'] == p_id]
-            if len(product) == 0:
-                print('상품이 존재하지 않습니다.')
-                return
+            if count < self.products[product]:
 
-            if count * self.prices[product] < amount:
-                self.products[product] -= count
-                changes = amount - count * self.prices[product]
-                print('잔돈은 ' + str(changes))
+                # p_id 설정으로 물품명 있는지 확인
+                # product = self.products[self.products['p_id'] == p_id]
+                # if len(product) == 0:
+                #     print('상품이 존재하지 않습니다.')
+                #     return
 
-            else :
-                print('금액이 부족합니다.')
+                if count * self.prices[product] < amount:
+                    self.products[product] -= count
+                    changes = amount - count * self.prices[product]
+                    print('잔돈은 ' + str(changes))
+
+                else :
+                    print('금액이 부족합니다.')
 
         else:
-            print('재고가 부족합니다.')
+            print('상품 재고가 부족합니다.')
 
 
     def get_name(self):
@@ -86,7 +89,7 @@ def create_store():
     p_id = input('상품명 입력: ')
 
     # 클래스에 있는 생성자를 사용하여 새로운 변수에 할당
-    store = AiStore(s_name, s_id, locate)
+    store = AiStore(s_name, s_id, locate, p_id)
 
     print('{} 스토어가 생성 되었습니다.'.format(store.get_name()))
     return store
@@ -124,7 +127,6 @@ def buy():
         return
 
     product = input('상품 입력:')
-    # product = input('상품 입력:')
     count = input('구매 개수 입력: ')
     count = int(count)
     # 옵션
